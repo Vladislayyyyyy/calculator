@@ -1,0 +1,42 @@
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main()
+        {
+            string a; 
+            string b;
+            string c;
+            Console.WriteLine("Введите первое число");
+            a = Console.ReadLine();
+            int first_value = Convert.ToInt32(a);
+            
+            Console.WriteLine("Введите второе число");
+            b = Console.ReadLine();
+            int second_value = Convert.ToInt32(b);
+            
+            Console.WriteLine("Введите операцию(+|-|*|/)");
+            c = Console.ReadLine();
+            switch (c)
+            {
+                case "+" :
+                    Console.WriteLine($"Сумма двух чисел: {first_value+second_value}");
+                    break;
+                case "-" :
+                    Console.WriteLine($"Разность двух чисел: {first_value-second_value}");
+                    break;
+                case "*" :
+                    Console.WriteLine($"Произведение двух чисел равно: {first_value * second_value}");
+                    break;
+                case"/" :
+                    Console.WriteLine($"Частое двух чилен равно: {first_value/second_value}");
+                    break;
+                default:
+                    Console.WriteLine("Вы ввели несуществующий оператор!!!");
+                    break;
+                    
+            }
+
+        }   
+    }
+}
